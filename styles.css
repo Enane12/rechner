@@ -1,0 +1,129 @@
+body {
+    font-family: inherit;
+    background: rgb(185, 223, 246);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: 500ms all ease;
+    letter-spacing: 1px;
+  }
+  
+  input {
+    background: rgb(228, 240, 246);
+    border: none;
+    display: flex;
+    width: 250px;
+    height: 25px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Header */
+    .header{
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        font-size: 15px;
+    }
+
+    .header span{
+        justify-content: flex-end;
+        display: block;
+    }
+
+/* End Header */
+
+
+/* main */
+
+.mainContent{
+    background: white;
+    border-radius: 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+.mainSection{
+    margin: 0 25px 0 25px;
+    padding: 25px 0 25px 0;
+    display: flex;
+}
+
+.inputAmount{
+    margin-top: 8px;
+}
+
+
+.btnContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnContainer .btntip{
+    width: 80px;
+    height: 35px;
+    background: rgb(41, 38, 246);
+    font-size:  15px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;    
+
+}
+
+.btnContainer  #btnTip{
+    background: rgb(228, 240, 246);
+    color: black;
+}
+
+.inputPeopleBox{
+    margin-top: 15px;
+}
+
+#numberOfPeople{
+    margin-top: 8px;
+}
+
+.computedAmount{
+    background: rgb(69, 54, 230);
+    border-radius: .8rem;
+    width: 640px;
+    padding: 20px;
+    color: white;
+}
+
+
+.computeBoxTitle span{
+    justify-content: flex-end;
+    display: block;
+    font-size: 12px;
+}
+
+.computedBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.resetBtn{
+    width: 340px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* End main */
+
+

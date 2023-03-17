@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css"> 
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="headTitle">Calcul <span>ator...</span></h1>
+    </header>
+
+    <main class="mainContent">
+      <section class="mainSection">
+        <article class="calculatorBox">
+
+          <div class="billInput">
+            <label for="billAmount" class="inputeTitle">Bill</label> 
+            <!--<img src="./images/icon-dollar.svg" class="inputIcon"> -->
+            <input type="number" class="inputAmount" id="billAmount" placeholder="">
+          </div>
+
+          <div class="tipsContainer">
+            <h4 class="tipsContainerTitle">Select Tip %</h4>
+
+            <div class="btnContainer">
+              <button class="btntip" dataId="5">5%</button>
+              <button class="btntip" dataId="10">10%</button>
+              <button class="btntip" dataId="15">15%</button>
+              <button class="btntip" dataId="25">25%</button>
+              <button class="btntip" dataId="50">50%</button>
+              <button class="btntip" id="btnTip">Custom</button>
+
+            </div>
+          </div>
+
+          <div class="inputPeopleBox">
+            <label for="numberOfPeople" class="inputTitle">Number of people</label>
+            <!--<img src="./images/icon-person.svg" alt="" class="imputIcon"> -->
+            <input type="number" class="input#people" id="numberOfPeople" placeholder="">
+          </div>
+
+        </article>
+
+        <article class="computedAmount">
+
+          <div class="computedBox">
+            <h3 class="computeBoxTitle">Tip Amount <span>/  person</span></h3>
+            <p class="computedBoxAmount" id="computedBoxTip">0,00€</p>
+          </div>
+
+          <div class="computedBox">
+            <h3 class="computeBoxTitle">Total <span> / person</span></h3>
+            <p class="computedBoxAmount" id="computedBoxAmount">0,00€</p>
+          </div>
+
+          <button class="resetBtn" id="resetBoutton">Reset</button>
+        </article>
+          
+
+        <!--javascript-->
+        <script src="index.js"></script>
+
+
+
+      </section>
+    </main>
+
+
+
+  </div>
+
+</body>
+</html>
