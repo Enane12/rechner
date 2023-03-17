@@ -126,36 +126,3 @@ body {
 /* End main */
 
 
-@media (min-width: 320px) {
-    .input-group--amount,
-    .input-group--no-of-people  {
-        width: 100%;
-    }
-}
-
-
-
-@media (min-width: 1024px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .main-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .computedBox {
-        margin: 25px 0 0;
-    }
-
-    .resetBtn {
-        display: block;
-        margin: 30px auto 0;
-    }
-}
