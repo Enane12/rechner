@@ -24,7 +24,7 @@ body {
     .header{
         position: relative;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 50px;
         font-size: 15px;
     }
 
@@ -42,6 +42,11 @@ body {
     background: white;
     border-radius: 20px;
     margin: 0px 20px 0px 20px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .mainSection{
@@ -61,7 +66,7 @@ body {
 }
 
 .btnContainer .btntip{
-    width: 80px;
+    width: 85px;
     height: 35px;
     background: rgb(41, 38, 246);
     font-size:  15px;
@@ -89,7 +94,8 @@ body {
 .computedAmount{
     background: rgb(69, 54, 230);
     border-radius: .8rem;
-    width: 640px;
+    width: 650px;
+    height: 300px;
     padding: 20px;
     color: white;
 }
@@ -108,22 +114,48 @@ body {
 
 
 .resetBtn{
-    width: 340px;
+    width: 350px;
     height: 40px;
     font-size: 20px;
-    margin-top: 70px;
+    margin-top: 120px;
     border-radius: 5px;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
 
 
 /* End main */
 
 
+@media (min-width: 320px) {
+    .input-group--amount,
+    .input-group--no-of-people  {
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .computedBox {
+        margin: 25px 0 0;
+    }
+
+    .resetBtn {
+        display: block;
+        margin: 30px auto 0;
+    }
+}
