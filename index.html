@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="styles.css"> 
   <title>Tip calculator app</title>
 </head>
@@ -16,12 +16,13 @@
 
     <main class="mainContent">
       <section class="mainSection">
+
         <article class="calculatorBox">
 
           <div class="billInput">
             <label for="billAmount" class="inputeTitle">Bill</label> 
-            <!--<img src="./images/icon-dollar.svg" class="inputIcon"> -->
-            <input type="number" class="inputAmount" id="billAmount" placeholder="0">
+            <img src="./images/icon-dollar.svg" class="inputIcon">
+            <input type="number" class="inputAmount" id="billAmount" placeholder="0€">
           </div>
 
           <div class="tipsContainer">
@@ -33,21 +34,20 @@
               <button class="btntip" dataId="15">15%</button>
               <button class="btntip" dataId="25">25%</button>
               <button class="btntip" dataId="50">50%</button>
-              <button class="btntip" id="btnTip">Custom</button>
+              <input type="number" class="btn btnCustom" id="btnCustom" placeholder="Custom"></input>
 
             </div>
           </div>
 
           <div class="inputPeopleBox">
             <label for="numberOfPeople" class="inputTitle">Number of people</label>
-            <!--<img src="./images/icon-person.svg" alt="" class="imputIcon"> -->
+            <img src="./images/icon-person.svg" class="imputIcon">
             <input type="number" class="input#people" id="numberOfPeople" placeholder="0">
           </div>
 
         </article>
 
         <article class="computedAmount">
-
           <div class="computedBox">
             <h3 class="computeBoxTitle">Tip Amount <span>/  person</span></h3>
             <p class="computedBoxAmount" id="computedBoxTip">0,00€</p>
@@ -58,7 +58,7 @@
             <p class="computedBoxAmount" id="computedBoxAmount">0,00€</p>
           </div>
 
-          <button class="resetBtn" id="resetBoutton">Reset</button>
+          <button class="resetBtn" id="resetButton">RESET</button>
         </article>
           
 

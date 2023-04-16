@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    transition: 500ms all ease;
     letter-spacing: 1px;
   }
   
@@ -12,12 +11,13 @@ body {
     background: rgb(228, 240, 246);
     border: none;
     display: flex;
-    width: 250px;
-    height: 25px;
-    font-size: 15px;
+    width: 370px;
+    height: 35px;
+    font-size: 25px;
     outline: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px;
+    font-weight: bold;
 }
 
 /* Header */
@@ -39,49 +39,89 @@ body {
 /* main */
 
 .mainContent{
-    background: white;
-    border-radius: 20px;
-    margin: 0px 20px 0px 20px;
-    width: 800px;
-    position: absolute;
+    position: absolute ;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
+    background: white;
+    border-radius: 20px;
+    margin: 20px 20px 0px 20px;
+    padding: 15px 45px 30px 20px;
 }
 
 .mainSection{
-    margin: 0 25px 0 25px;
-    padding: 25px 0 25px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 35px ;
+}
+
+
+.calculatorBox{
+    padding: 5px;
+    background:rgb(255, 255, 255);
+    border-radius: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+
+.billInput{
+    position: relative;
+}
+
+.inputIcon {
+    position: absolute;
+    top: 60%;
+    left: 3%;
 }
 
 .inputAmount{
     margin-top: 8px;
+    text-align: right;
 }
 
 
 .btnContainer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    grid-gap: 10px ;
+    justify-content: space-between;
+    margin: 4px;
+    padding: 35px;
+}
+
+.btn {
+    border: none;
+    background: rgb(185, 223, 246);
+    color: black;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    margin-left: -50px;
+    text-align: center;
 }
 
 .btnContainer .btntip{
-    width: 85px;
-    height: 35px;
-    background: rgb(41, 38, 246);
-    font-size:  15px;
+    width: 170px;
+    height: 60px;
+    background: rgb(10, 8, 98);
+    font-size:  20px;
     border-radius: 5px;
     color: white;
     text-align: center;
-    margin-bottom: 10px;
-    margin-right: 10px;    
-
+    margin-bottom: 20px;
+    margin-left: -50px;
+    font-weight: bold;
 }
 
-.btnContainer  #btnTip{
-    background: rgb(228, 240, 246);
-    color: black;
+.btnContainer .btntip:hover{
+    color: aqua;
+    background-color: rgb(23, 19, 233);
 }
+
 
 .inputPeopleBox{
     margin-top: 15px;
@@ -89,40 +129,66 @@ body {
 
 #numberOfPeople{
     margin-top: 8px;
+    text-align: right;
+    font-weight: bold;
 }
 
+.imputIcon {
+    position: relative;
+    top: 45px;
+    left: -170px;
+}
 .computedAmount{
-    background: rgb(69, 54, 230);
-    border-radius: .8rem;
-    width: 650px;
-    height: 300px;
-    padding: 20px;
+    float: left;
+    background:rgb(10, 8, 98);
+    border-radius: 15px;
+    padding: 22px;
     color: white;
-}
-
-
-.computeBoxTitle span{
-    justify-content: flex-end;
-    display: block;
-    font-size: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px;
 }
 
 .computedBox{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.computeBoxTitle span{
+    justify-content: flex-end;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.computedBoxAmount{
+    position: relative;
+    color:rgb(23, 19, 233) ;
+    font-size: 30px;
+}
 
 .resetBtn{
-    width: 350px;
-    height: 40px;
+    position: relative;
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 5px 0;
     font-size: 20px;
-    margin-top: 120px;
-    border-radius: 5px;
+    border-radius: 10px;
+    top: 140px;
     text-align: center;
+    background-color: rgb(23, 19, 233);
+    font-weight: bold;
 }
 
+.resetBtn:hover{
+    background-color:rgb(185, 223, 246);
+}
 
 /* End main */
 
+
+
+
+/* Media Queries */
 
